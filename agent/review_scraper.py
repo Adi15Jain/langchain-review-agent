@@ -6,7 +6,7 @@ load_dotenv()
 from apify_client import ApifyClient
 
 def fetch_reviews_from_apify(dataset_id: str) -> list[dict]:
-    client = ApifyClient("apify_api_aHD9xE330I7UbCwO42AlrR5JJIer0X2HST97")
+    client = ApifyClient("apify_api_....")
     try:
         list_page = client.dataset(dataset_id).list_items()
         items = list_page.items[:]
